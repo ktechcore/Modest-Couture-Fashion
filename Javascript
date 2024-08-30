@@ -1,0 +1,50 @@
+// Responsive Navbar Toggle
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    var navbar = document.getElementById('navbar');
+    navbar.classList.toggle('showing');
+});
+
+// Countdown Timer for Sale
+function countdownTimer() {
+    const countdownDate = new Date("Aug 31, 2024 23:59:59").getTime();
+    const countdownElement = document.querySelector('.countdown p');
+
+    const updateCountdown = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownElement.textContent = `${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
+
+        if (distance < 0) {
+            clearInterval(updateCountdown);
+            countdownElement.textContent = "EXPIRED";
+        }
+    }, 1000);
+}
+
+countdownTimer();
+
+// Scroll to Top Button
+var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+}
+
+scrollToTopBtn.addEventListener('click', function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});
