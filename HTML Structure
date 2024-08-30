@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modest Couture Fashion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Modest Couture Fashion">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Elevate Your Style: Where Fashion Meets Modesty</h1>
+            <a href="#" class="btn">Explore More</a>
+        </div>
+    </section>
+
+    <section class="collections">
+        <h2>Popular Collections</h2>
+        <div class="collection-grid">
+            <div class="collection-item" style="background-image: url('collection1.jpg');">
+                <div class="overlay">
+                    <h3>Up to 80% off Everything</h3>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+            </div>
+            <div class="collection-item" style="background-image: url('collection2.jpg');">
+                <div class="overlay">
+                    <h3>Discount Code: Hijab001</h3>
+                    <a href="#" class="btn">Use Code</a>
+                </div>
+            </div>
+            <div class="collection-item" style="background-image: url('collection3.jpg');">
+                <div class="overlay">
+                    <h3>Own Your Expression - 40%</h3>
+                    <a href="#" class="btn">Shop The Collection</a>
+                </div>
+            </div>
+            <div class="collection-item" style="background-image: url('collection4.jpg');">
+                <div class="overlay">
+                    <h3>Up to 70% Off</h3>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="best-sellers">
+        <h2>Best Sellers</h2>
+        <div class="best-seller-grid">
+            <div class="best-seller-item">
+                <img src="product1.jpg" alt="Best Seller 1">
+                <h3>Luxury Diamond Beads Open Abaya Cardigan</h3>
+                <p>Rs. 7,500</p>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <section class="sale">
+        <h2>Unlock Your Modest Style Potential in Our Stunning Abaya Sale.</h2>
+        <div class="countdown">
+            <p>00 Days 00 Hours 00 Minutes 00 Seconds</p>
+            <a href="#" class="btn">Shop The Sale Items</a>
+        </div>
+    </section>
+
+    <section class="new-arrivals">
+        <h2>New Arrivals</h2>
+        <div class="new-arrivals-grid">
+            <div class="new-arrival-item">
+                <img src="product2.jpg" alt="New Arrival 1">
+                <h3>Luxury Diamond Beads Open Abaya Cardigan</h3>
+                <p>Rs. 7,500</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <!-- Add more new arrivals as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-left">
+                    <p>Free Shipping | Quick Payment | 24/7 Support | Money Return</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Modest Couture Fashion Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
